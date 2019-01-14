@@ -31,12 +31,6 @@ body {
 	padding: 10px;
 }
 
-#main {
-	background: #f7b58c;
-	border: 3px solid;
-	box-shadow: -5px 10px #84739c;
-}
-
 #img-div {
 	border: 3px solid #181010;
 	padding: 30px;
@@ -46,4 +40,8 @@ body {
   	width: 75%;
   	height: auto;
   	margin-bottom: 20px;
+}
+
+#tribute-info {
+	text-align: left;
 }

@@ -21,11 +21,29 @@ body {
 	background: #ffefff;
 	color: #181010;
 	text-align: center;
-	font-family: 'pokemon-font';
+	font-family: 'pokemon-font';	
+}
+
+.textbox {
+	background: #f7b58c;
+	border: 3px solid;
+	box-shadow: -5px 10px #84739c;
+	padding: 10px;
 }
 
 #main {
 	background: #f7b58c;
 	border: 3px solid;
 	box-shadow: -5px 10px #84739c;
+}
+
+#img-div {
+	border: 3px solid #181010;
+	padding: 30px;
+}
+
+#image {
+  	width: 75%;
+  	height: auto;
+  	margin-bottom: 20px;
 }

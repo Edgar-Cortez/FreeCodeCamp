@@ -24,6 +24,9 @@ body {
 	font-family: 'pokemon-font';	
 }
 
+section p {
+	margin-top: 50px;
+}
 .textbox {
 	background: #f7b58c;
 	border: 3px solid;

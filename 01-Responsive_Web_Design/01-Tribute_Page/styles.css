@@ -4,6 +4,7 @@ https://lospec.com/palette-list/pokemon-sgb
 background: #ffefff; 	light-purple
 background: #84739c;	dark-purple
 background: #f7b58c;	light-orange
+background: #f0f088;	yellow
 background: #181010;	black
 */
 
@@ -17,12 +18,28 @@ background: #181010;	black
   /* There is no SVG version of this font due to support being dropped in SVG 2 */
 }
 
+a:link {
+	color: #f0f088;
+}
+
+a:hover {
+	color: #ffefff;
+}
+
+a:visited {
+	color: #84739c;
+}
+
 body {
 	background: #ffefff;
 	color: #181010;
 	text-align: center;
 	font-family: 'pokemon-font';	
 }
+
+/*image {
+	max-width: 10em;
+}*/
 
 section p {
 	margin-top: 50px;
@@ -36,13 +53,19 @@ section p {
 
 #img-div {
 	border: 3px solid #181010;
-	padding: 30px;
+	margin: 0 auto;
+	width: 90%;
+	padding: 30px; 
 }
 
 #image {
-  	width: 75%;
+  	max-width: 100%;
   	height: auto;
+  	margin-left: auto;
+  	margin-right: auto;
   	margin-bottom: 20px;
+  	display: block;  	
+
 }
 
 #main {

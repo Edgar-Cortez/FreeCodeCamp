@@ -64,6 +64,15 @@ label {
 	grid-column: 1 / 3;
 }
 
+.question-group input {
+	display: inline-block;
+	width: 40px;
+}
+
+.radio-group {
+	
+}
+
 input,
 button {
 	grid-column: 2 / 3;

@@ -15,7 +15,7 @@ body {
 /*Contact Section*/
 #title,
 #description {
-	text-align: center
+	text-align: left;
 }
 
 h3 {
@@ -28,7 +28,9 @@ ul {
 }
 
 .contacts {
-	background: #4b5195;
+	/*background: #4b5195;*/
+	background-image: url("images/turtle-shell.png");
+	background-position: center center;
 	color: #fff;
 }
 
@@ -69,10 +71,6 @@ label {
 	width: 40px;
 }
 
-.radio-group {
-	
-}
-
 input,
 button {
 	grid-column: 2 / 3;
@@ -80,13 +78,15 @@ button {
 
 button	{
 	background: lightgrey;
+	font-size: 20px;
 	width: 100%;
 	border: 0;
 }
 
 button:hover, 
 button:focus {
-	background: gold;
+	background: #799b5d;
+	color: white;
 	outline: 0;
 }
 
@@ -100,12 +100,17 @@ button:focus {
 }
 
 @media (min-width: 600px) {
+	#title,
+	#description {
+		text-align: center;
+	}
 	.contain {
 		padding: 0;
 	}
 }
 
 @media (min-width: 700px) {
+	
 	.wrapper {
 		display: grid;
 		grid-template-columns: 1fr 2fr;

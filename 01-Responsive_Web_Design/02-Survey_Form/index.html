@@ -5,114 +5,110 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1 id="title"> Radical Ninja Turtles Survey Form, Dude!</h1>
-	<p id="description">We want to know how much trivia you know and which turtle you align most with</p>
+	<div class="contain">
 
-	<form id="survey-form">
-		<!-- User Information -->
-		<div>
-			<label id="name-label">Name: </label>
-			<input id="name" type="text" name="name" placeholder="Enter Full Name" required>
-		</div>
-		
-		<div>
-			<label id="email-label">Email: </label>
-			<input id="email" type="email" size="64" maxlength="64" placeholder="example@ninjaturtle.com"
-				   required>
-		</div>
-
-		<div>
-			<label id="number-label">Age: </label>
-			<input id="number" type="number" name="age" placeholder="Enter Age" min="1" max="125">
-		</div>
-
-		<!-- Trivia -->
-		<div>
-			<label>How many ninja turtles are there?</label>
-			<select id="dropdown">
-				<option>Select an amount</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-			</select>
-		</div>
-
-		<div>
-			<label>Who is their father</label>
-				<ul style="list-style: none"> <!-- Add this to style sheet -->
-					<li>
-						<input type="radio" value="1" name="radio-buttons">
-						Master Roshi
-					</li>
-					<li>
-						<input type="radio" value="2" name="radio-buttons">
-						Master Yoda
-					</li>
-					<li>
-						<input type="radio" value="3" name="radio-buttons">
-						Master Splinter
-					</li>
-					<li>
-						<input type="radio" value="4" name="radio-buttons">
-						Mr. Miyagi
-					</li>
-				</ul>
-		</div>
-
-		<div>
-			<label>What are the names of the Teenage Mutant Ninja Turtles</label>
-			<ul style="list-style: none"> <!-- Add this to the style sheet -->
-				<li>
-					<input type="checkbox" value="1" name="">
-					Da Vinci
-				</li>
-				<li>
-					<input type="checkbox" value="2" name="">
-					Leonardo
-				</li>
-				<li>
-					<input type="checkbox" value="3" name="">
-					Botticelli
-				</li>
-				<li>
-					<input type="checkbox" value="4" name="">
-					Titian
-				</li>
-				<li>
-					<input type="checkbox" value="5" name="">
-					Raphael
-				</li>
-				<li>
-					<input type="checkbox" value="6" name="">
-					Donatello
-				</li>
-				<li>
-					<input type="checkbox" value="7" name="">
-					Giotto
-				</li>
-				<li>
-					<input type="checkbox" value="8" name="">
-					Michelangelo
-				</li>
-			</ul>
-		</div>
-
-		<div>
-			<label>Please share any other trivia you may have about the Teenage Mutant Ninja Turtles!</label>
-			<div>
-				<textarea rows="5" cols="20" placeholder="Enter trivia here!"></textarea>
+		<div class="wrapper">
+			<!-- Contact Information -->
+			<div class="contacts">
+				<h1 id="title">Radical Ninja Turtles Survey Form, Dude!</h3>
+				<p id="description">We want to know how much trivia you know!</p>
 			</div>
-		</div>
+			<!-- Form section -->
+			<div class="form">
+				<h3>Start the trivia goodness, Brah!</h3>	
+				<form id="survey-form" action="">
+					<p>
+						<label id="name-label">Your Name</label>
+						<input id="name" type="text" name="name" placeholder="Enter Full Name" required>
+					</p>
+					<p>
+						<label id="email-label">Email Address</label>
+						<input id="email" type="email" size="64" maxlength="64" placeholder="example@ninjaturtle.com"
+					   required>
+					</p>
+					<p>
+						<label id="number-label">Age</label>
+						<input id="number" type="number" name="age" placeholder="Enter Age" min="1" max="125">
+					</p>
+			<!-- Questions -->
 
-		<div>
-			<input id="submit" type="submit" value="Send Form">
-		</div>
-
-
-		
-	</form>
-
+					<p class="full-width">
+						<label id="">How many ninja turtles are there?</label>
+						<select id="dropdown">
+							<option>Select an amount</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</p>
+					<p class="full-width ">
+						<label id="">How many ninja turtles are there?</label>
+						<ul class="question-group">
+							<li>
+								<input type="radio" value="1" name="radio-buttons">Master Roshi</label>
+							</li>
+							<li>
+								<input type="radio" value="2" name="radio-buttons"/>Master Yoda<br>
+							</li>
+							<li>
+								<input type="radio" value="3" name="radio-buttons">Master Splinter<br>
+							</li>
+							<li>
+								<input type="radio" value="4" name="radio-buttons">Mr. Miyagi<br>
+							</li>
+						</ul>
+					</p>
+					<p class="full-width">
+						<label id="">What are the names of the Teenage Mutant Ninja Turtles?</label>
+						<ul class="question-group"> 
+							<li>
+								<input type="checkbox" value="1" name="">
+								Da Vinci
+							</li>
+							<li>
+								<input type="checkbox" value="2" name="">
+								Leonardo
+							</li>
+							<li>
+								<input type="checkbox" value="3" name="">
+								Botticelli
+							</li>
+							<li>
+								<input type="checkbox" value="4" name="">
+								Titian
+							</li>
+							<li>
+								<input type="checkbox" value="5" name="">
+								Raphael
+							</li>
+							<li>
+								<input type="checkbox" value="6" name="">
+								Donatello
+							</li>
+							<li>
+								<input type="checkbox" value="7" name="">
+								Giotto
+							</li>
+							<li>
+								<input type="checkbox" value="8" name="">
+								Michelangelo
+							</li>
+						</ul>
+					</p>
+			<!-- Text Area -->
+					<p class="full-width">
+						<label>Write your message</label>
+						<textarea name="" id="" cols="30" rows="7"></textarea>						
+					</p>
+					<p class="full-width">
+						<button id="submit">Send</button>
+						<!-- <input id="submit" type="submit" value="Send Form"> -->
+					</p>					
+				</form>			
+			</div>
+		</div>		
+	</div>
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
